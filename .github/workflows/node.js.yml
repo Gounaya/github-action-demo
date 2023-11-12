@@ -23,8 +23,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    
     - run: rm package-lock.json
     - run: npm install
+    - run: npm install next@latest
     - run: npm install node-fetch
     - run: npm run build
     - run: npm test
