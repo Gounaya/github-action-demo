@@ -30,3 +30,4 @@ jobs:
     - run: npm install node-fetch
     - run: npm run build
     - run: npm test
+    
